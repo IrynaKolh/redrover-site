@@ -10,9 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/toggle.css">
+    <link rel="stylesheet" href="./css/mobile.css">    
   </head>
   <body>
     <div class="body-container">
@@ -46,6 +49,35 @@
                 </li>
               </ul>
             </nav>
+
+            <div class="menu-mobile">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#courses" onclick="scrollToSection('#courses')"
+                    >Courses</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="#learn" onclick="scrollToSection('#learn')"
+                    >Training</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="#about" onclick="scrollToSection('#about')"
+                    >About school</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="#teachers">Teachers</a>
+                </li>
+              </ul>
+              <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menu-icon material-icons md-light">menu</i>
+                <i class="close-icon material-icons md-light">close</i>
+              </button>
+            </div>
+
             <div class="switch">
               <input
                 id="language-toggle"
@@ -59,6 +91,7 @@
           </div>
         </div>
       </header>
+
       <main id="main">
         <section class="hero">
           <div class="content-box">
@@ -68,22 +101,22 @@
                 <p class="hero-description">
                   We provide relevant knowledge, practical skills and
                   opportunity to enter the American job market!
-                </p>
-                <div class="btn-group">
-                  <button class="hero-btn-join">
-                    <a href="#join-us" onclick="scrollToSection('#join-us')"
-                      >Join Us</a
-                    >
-                  </button>
-                  <p class="hero-terms">
-                    Semester starts <br />
-                    on January 2024
-                  </p>
-                </div>
+                </p>               
               </div>
               <div class="hero-image">
                 <img src="./assets/logo-people.svg" alt="People" />
               </div>
+            </div>
+            <div class="btn-group">
+              <button class="hero-btn-join">
+                <a href="#join-us" onclick="scrollToSection('#join-us')"
+                  >Join Us</a
+                >
+              </button>
+              <p class="hero-terms">
+                Semester starts <br />
+                on January 2024
+              </p>
             </div>
           </div>
         </section>
@@ -463,6 +496,7 @@
           </div>
         </section>
       </main>
+
       <footer class="footer">
         <div class="content-box">
           <div class="footer-container">
@@ -519,5 +553,6 @@
     </div>
 
     <script src="./main.js"></script>
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>
