@@ -164,6 +164,9 @@ h3 img {
   min-width: 336px;
   height: 72px;
   border: #e20026 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .redirect-button a {
