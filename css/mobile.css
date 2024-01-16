@@ -241,7 +241,7 @@
   .our-courses-tag,
   .about-us-description,
   .join-us-text,
-  .checkbox-label {
+  .checkbox-label span {
     font-size: 16px;
     line-height: 20px;
     line-height: 1.7;
