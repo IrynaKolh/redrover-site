@@ -152,10 +152,6 @@
     flex-direction: column-reverse;
     margin: 0 1rem;
   }
-  .hero-title {
-    font-size: 36px;
-    line-height: 50px;
-  }
   .hero-description {
     font-size: 16px;
     line-height: 28px;
@@ -169,7 +165,7 @@
     margin: 0 1rem;
   }
   .hero-btn-join {
-    width: 200px;
+    width: 250px;
   }
   .learning-process,
   .about-us {
@@ -205,6 +201,10 @@
   .about-us-container {
     flex-direction: column;
     justify-content: center;
+  }
+  .about-us-content,
+  .hero-content {
+    width: 100%;
   }
   .about-us-image {
     width: 100%;
@@ -279,6 +279,14 @@
   .join-us-form-btn {
     width: 320px;
   }
+  .hero-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .btn-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
   .join-us-container {
     top: 10%;
   }
@@ -304,16 +312,17 @@
   .hamburger {
     right: 5.5rem;
   }
-  .btn-group {
-    flex-direction: column;
-    gap: 1rem;
-  }
+  .hero-title {
+    font-size: 30px;
+    line-height: 42px;
+  } 
   .our-courses-tags-box {
     flex-direction: column;
     gap: 0;
   }
   .join-us-form-btn {
     width: 280px;
+    margin-top: -30px;
   }
   .teachers-btn-see-all {
     width: 300px;
@@ -328,5 +337,8 @@
   }
   .redirect-button{
     min-width: 260px;
+  }
+  .join-us-form input {
+    height: 45px;
   }
 }

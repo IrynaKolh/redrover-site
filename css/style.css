@@ -99,9 +99,12 @@ h3 img {
 
 .hero-container {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  flex-direction: row;  
   padding-top: 50px;
+}
+
+.hero-content {
+  width: 57%;
 }
 
 .hero-title {
@@ -176,7 +179,7 @@ h3 img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 43%;
 }
 
 .hero-image img {
@@ -501,13 +504,17 @@ h3 img {
   padding-right: 1rem;
 }
 
+.about-us-content {
+  width: 55%;
+}
+
 .about-us-image {  
   margin-top: 2rem;
   width: 45%;
 }
 
 .about-us-image img {
-  width: 45vw;  
+  width: 100%;  
 }
 
 /* TEACHERS */
