@@ -20,15 +20,15 @@ const i18Obj = {
     "our-courses-title": "Our courses",
     "our-courses-description": "Choose suitable free courses for your career track",
     "course-qa": "QA theory",
-    "course-qa-description": "Goals, principles, types, methodologies and stages of testing. Terminology, test documentation. Fundamentals of automation. Test case writing practice",
+    "course-qa-description": "Goals, principles, types, methodologies and stages of testing. Terminology, test documentation. Fundamentals of automation. Test case writing practice.",
     "course-java": "Java programming",
-    "course-java-description": "Java basics, Object-Oriented Programming. Learning Java for beginners. Creating a framework for automated UI testing",
+    "course-java-description": "Java basics, Object-Oriented Programming. Learning Java for beginners. Creating a framework for automated UI testing.",
     "course-sql": "SQL basics",
     "course-sql-description": "Working with relational databases. Learning to work with SQL queries using practical examples.",
     "course-js": "JavaScript",
     "course-js-description": "Basics of the language, cycles, functions, the concept of OOP. Familiarity with Node JS, Mocha, Chai. Introduction to Cypress: UI and API auto-tests. Working on a test project.",
     "course-interview": "Interview Prep",
-    "course-interview-description": "Practicing interviewing with mock interviews and analyzing the interviewee’s responses to commonly asked questions. Classes for beginner and advanced students",
+    "course-interview-description": "Practicing interviewing with mock interviews and analyzing the interviewee’s responses to commonly asked questions. Classes for beginner and advanced students.",
     "course-python": "Python",
     "course-python-description": "Variables, data types and programming principles. Basic Autotests for UI and API, creating a framework. Problem solving on codewars.com.",
     "course-english": "English",
@@ -43,14 +43,14 @@ const i18Obj = {
     "terms-and-cond-link": "personal data processing policy",
     "join-us-btn": "Send Request",
     "about-us-title": "About our school",
-    "about-us-description-1": "For more than three years, RedRover.school has given people the opportunity to become software testing professionals. Over a thousand people have comprehensive and systematic knowledge trusted us to take their first steps in a new career.",
+    "about-us-description-1": "For more than three years, RedRover school has given people the opportunity to become software testing professionals. Over a thousand people have comprehensive and systematic knowledge trusted us to take their first steps in a new career.",
     "about-us-description-2": "Our school provides comprehensive and systematic knowledge in various testing areas, with an opportunity to take additional courses and to participate in testing projects. Classes are conducted online, in Russian and are scheduled to accommodate the PST time zone.",
     "about-us-description-3": "Participation in our courses do not require any special knowledge or preparation. The training is aimed to get the students into the job market quickly and efficiently. All educational programs are developed by teachers (active IT professionals) with a focus on practical application.",
     "about-us-description-4": "Join us to begin a new career as an IT professional!",
     "teachers-title": "Teachers",
     "sergey": "Sergey Demyanenko",
     "sergey-position": "Software engineer",
-    "sergey-description": "I have been a teacher since 2006. I focus on programming in my lessons because every programmer can be a tester, but not every",
+    "sergey-description": "I have been a teacher since 2006. I focus on programming in my lessons because every programmer can be a tester, but not every.",
     "baha": "Baha Mametyarov",
     "baha-position": "Senior Consultant at CGI",
     "baha-description": "I have over 18 years of experience in Tech. I’ve been teaching at the RedRover school since March 2022.",
@@ -96,10 +96,10 @@ const i18Obj = {
     "adelina": "Adelina Kovina",
     "adelina-position": "Teaching English speaking, supervising Java practice",
     "adelina-description": "I’m passionate about technologies of all kinds, helping society move toward a better world for everyone. I’m very into social dramas, science fiction, music and obsessed with the American accent.",
-    "marina":"Marina Mikhailovskaya",
+    "marina": "Marina Mikhailovskaya",
     "marina-position": "QA Engineer Teaching Interview preparation for QA",
     "marina-description": "I am a practicing QA Engineer, I love my profession and am happy to share my knowledge with students.",
-    "viktoriia":"Viktoriia Karpus",
+    "viktoriia": "Viktoriia Karpus",
     "viktoriia-position": "English teacher",
     "viktoriia-description": "Teaching is my passion, and I’ve been doing it since 2011. I love how teachers and students learn from each other, to be in the class of students who’s eager to learn. It brings me joy to share knowledge useful for real life!",
     "artuom": "Artuom Kudryashov",
@@ -169,7 +169,7 @@ const i18Obj = {
     "terms-and-cond-link": "политикой обработки персональных данных",
     "join-us-btn": "ХОЧУ УЧИТЬСЯ",
     "about-us-title": "О школе",
-    "about-us-description-1": "Уже больше трех лет RedRover.School дает шанс людям освоить профессию тестировщика программного обеспечения. Более тысячи студентов и 7 потоков обучения, которые доверились нам, делая первые шаги в новой карьере, и остались довольны.",
+    "about-us-description-1": "Уже больше трех лет школа RedRover дает шанс людям освоить профессию тестировщика программного обеспечения. Более тысячи студентов и 7 потоков обучения, которые доверились нам, делая первые шаги в новой карьере, и остались довольны.",
     "about-us-description-2": "Наша школа дает обширные систематизированные знания в разных областях тестирования, предусматривает дополнительные курсы, участие в проектах. Занятия проходят онлайн на русском языке в часовом поясе PST. Срок обучения 4 месяца.",
     "about-us-description-3": "Программы наших курсов можно освоить без специальных знаний и подготовки. Обучение нацелено на быстрое и эффективное погружение в профессию. Учебные программы разрабатываются преподавателями (действующими специалистами в сфере IT) с упором на практику.",
     "about-us-description-4": "Присоединяйтесь к нам, чтобы начать новую карьеру ИТ-специалиста!",
@@ -314,7 +314,9 @@ function getLocalStorage() {
       select.value = localStorage.getItem('language');     
   } else {
     applyTranslation('en');   
-  } 
+  }
+  const body = document.querySelector(".body-container");
+  body.style.display = 'block'; 
 };
 
 window.addEventListener('load', getLocalStorage);

@@ -14,7 +14,8 @@ html {
   overflow: hidden;
   min-height: 100vh;
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  display: none;  
 }
 
 #main {
