@@ -14,7 +14,7 @@ html {
   overflow: hidden;
   min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
 #main {
@@ -141,6 +141,9 @@ h3 img {
   width: 336px;
   height: 72px;
   border: #e20026 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-btn-join a,
@@ -250,10 +253,10 @@ h3 img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  
   gap: 4rem;
   width: 100%; 
+  margin-top: 50px
 }
 
 .learning-process-item {
@@ -622,6 +625,9 @@ h3 img {
   cursor: pointer;
   border: #230040 3px solid;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .teachers-btn-see-all:hover {

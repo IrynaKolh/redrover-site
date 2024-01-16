@@ -27,25 +27,26 @@
                 ><img src="./assets/logo-redrover.svg" alt="Logo"
               /></a>
             </h3>
+
             <nav class="navigation">
               <ul class="nav-menu-list">
                 <li class="nav-menu-item">
-                  <a href="#courses" onclick="scrollToSection('#courses')"
+                  <a href="#courses" onclick="scrollToSection('#courses')" data-i18="link-courses"
                     >Courses</a
                   >
                 </li>
                 <li class="nav-menu-item">
-                  <a href="#learn" onclick="scrollToSection('#learn')"
+                  <a href="#learn" onclick="scrollToSection('#learn')" data-i18="link-training"
                     >Training</a
                   >
                 </li>
                 <li class="nav-menu-item">
-                  <a href="#about" onclick="scrollToSection('#about')"
+                  <a href="#about" onclick="scrollToSection('#about')" data-i18="link-about"
                     >About school</a
                   >
                 </li>
                 <li class="nav-menu-item">
-                  <a href="#teachers">Teachers</a>
+                  <a href="#teachers" data-i18="link-teachers">Teachers</a>
                 </li>
               </ul>
             </nav>
@@ -53,22 +54,22 @@
             <div class="menu-mobile">
               <ul class="menu">
                 <li class="menu-item">
-                  <a href="#courses" onclick="scrollToSection('#courses')"
+                  <a href="#courses" onclick="scrollToSection('#courses')" data-i18="link-courses"
                     >Courses</a
                   >
                 </li>
                 <li class="menu-item">
-                  <a href="#learn" onclick="scrollToSection('#learn')"
+                  <a href="#learn" onclick="scrollToSection('#learn')" data-i18="link-training"
                     >Training</a
                   >
                 </li>
                 <li class="menu-item">
-                  <a href="#about" onclick="scrollToSection('#about')"
+                  <a href="#about" onclick="scrollToSection('#about')" data-i18="link-about"
                     >About school</a
                   >
                 </li>
                 <li class="menu-item">
-                  <a href="#teachers">Teachers</a>
+                  <a href="#teachers" data-i18="link-teachers">Teachers</a>
                 </li>
               </ul>
               <button class="hamburger">
@@ -78,16 +79,13 @@
               </button>
             </div>
 
-            <div class="switch">
-              <input
-                id="language-toggle"
-                class="check-toggle check-toggle-round-flat"
-                type="checkbox"
-              />
-              <label for="language-toggle"></label>
-              <span class="on">EN</span>
-              <span class="off">RU</span>
-            </div>
+            <div class="select">
+              <select name="language" id="language" onchange="changeLanguage()">
+                 <option value="en">EN</option>
+                 <option value="ru">RU</option>                 
+              </select>
+           </div>
+           
           </div>
         </div>
       </header>
@@ -97,8 +95,8 @@
           <div class="content-box">
             <div class="hero-container">
               <div class="hero-content">
-                <h1 class="hero-title">Non-commercial IT school RedRover</h1>
-                <p class="hero-description">
+                <h1 class="hero-title" data-i18="hero-title">Non-commercial IT school RedRover</h1>
+                <p class="hero-description" data-i18="hero-description">
                   We provide relevant knowledge, practical skills and
                   opportunity to enter the American job market!
                 </p>               
@@ -108,12 +106,12 @@
               </div>
             </div>
             <div class="btn-group">
-              <button class="hero-btn-join">
-                <a href="#join-us" onclick="scrollToSection('#join-us')"
+              <div class="hero-btn-join">
+                <a href="#join-us" onclick="scrollToSection('#join-us')" data-i18="hero-btn-join"
                   >Join Us</a
                 >
-              </button>
-              <p class="hero-terms">
+              </div>
+              <p class="hero-terms" data-i18="hero-terms">
                 Semester starts <br />
                 on January 2024
               </p>
@@ -122,8 +120,8 @@
         </section>
         <section id="learn" class="learning-process">
           <div class="content-box">
-            <h2 class="learning-process-title">Learning process</h2>
-            <p class="learning-process-description">
+            <h2 class="learning-process-title" data-i18="learning-process-title">Learning process</h2>
+            <p class="learning-process-description" data-i18="learning-process-description">
               How the educational process is organized
             </p>
             <div class="learning-process-container">
@@ -133,44 +131,44 @@
                   src="./assets/calendar.svg"
                   alt="calendar"
                 />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-calendar">
                   Live lessons on ZOOM with a teacher discussing theory and
                   practice
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-2" src="./assets/hats.svg" alt="hats" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-hats">
                   Learning in mini groups to increase efficiency
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-3" src="./assets/glass.svg" alt="glass" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-glass">
                   Homework review and Q&A meetings with teachers
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-4" src="./assets/circle.svg" alt="circle" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-circle">
                   Practice projects imitating “real work agile environment”
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-5" src="./assets/hands.svg" alt="hands" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-hands">
                   Strong and supportive community on Slack
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-6" src="./assets/file_icon.svg" alt="file" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-file">
                   Three programming languages for your choosing
                 </p>
               </div>
               <div class="learning-process-item">
                 <img class="image-7" src="./assets/record.svg" alt="record" />
-                <p class="learning-process-item-description">
+                <p class="learning-process-item-description" data-i18="learning-record">
                   Unlimited access to lesson recordings
                 </p>
               </div>
@@ -179,14 +177,14 @@
         </section>
         <section id="courses" class="our-courses">
           <div class="content-box">
-            <h2 class="our-courses-title">Our courses</h2>
-            <p class="our-courses-description">
+            <h2 class="our-courses-title" data-i18="our-courses-title">Our courses</h2>
+            <p class="our-courses-description" data-i18="our-courses-description">
               Choose suitable free courses for your career track
             </p>
             <div class="our-courses-container">
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">QA theory</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-qa">QA theory</h3>
+                <p class="our-courses-item-description" data-i18="course-qa-description">
                   Goals, principles, types, methodologies and stages of testing.
                   Terminology, test documentation. Fundamentals of automation.
                   Test case writing practice
@@ -197,8 +195,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">Java</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-java">Java</h3>
+                <p class="our-courses-item-description" data-i18="course-java-description">
                   Java basics, Object-Oriented Programming. Learning Java for
                   beginners. Creating a framework for automated UI testing
                 </p>
@@ -207,8 +205,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">SQL basics</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-sql">SQL basics</h3>
+                <p class="our-courses-item-description" data-i18="course-sql-description">
                   Working with relational databases. Learning to work with SQL
                   queries using practical examples.
                 </p>
@@ -218,8 +216,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">JavaScript</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-js">JavaScript</h3>
+                <p class="our-courses-item-description" data-i18="course-js-description">
                   Basics of the language, cycles, functions, the concept of OOP.
                   Familiarity with Node JS, Mocha, Chai. Introduction to
                   Cypress: UI and API auto-tests. Working on a test project.
@@ -229,8 +227,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">Interview Prep</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-interview">Interview Prep</h3>
+                <p class="our-courses-item-description" data-i18="course-interview-description">
                   Practicing interviewing with mock interviews and analyzing the
                   interviewee’s responses to commonly asked questions. Classes
                   for beginner and advanced students
@@ -241,8 +239,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">Python</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-python">Python</h3>
+                <p class="our-courses-item-description" data-i18="course-python-description">
                   Variables, data types and programming principles. Basic
                   Autotests for UI and API, creating a framework. Problem
                   solving on codewars.com.
@@ -252,8 +250,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">English</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-english">English</h3>
+                <p class="our-courses-item-description" data-i18="course-english-description">
                   Classes for beginner and advanced learners. Preparing for an
                   interview in English. Working with Figma layouts and layout.
                   Accent reduction lessons.
@@ -264,8 +262,8 @@
                 </div>
               </div>
               <div class="our-courses-item">
-                <h3 class="our-courses-item-title">Frond-end</h3>
-                <p class="our-courses-item-description">
+                <h3 class="our-courses-item-title" data-i18="course-frontend">Frond-end</h3>
+                <p class="our-courses-item-description" data-i18="course-frontend-description">
                   Fundamentals of HTML and CSS. Website development using
                   JavaScript. Working with Figma layouts and layout. Website
                   development using the React framework.
@@ -283,15 +281,15 @@
           <div class="content-box">
             <div class="join-us-container">
               <div class="join-us-content">
-                <h2 class="join-us-title">Join us</h2>
-                <p class="join-us-description">
+                <h2 class="join-us-title" data-i18="join-us-title">Join us</h2>
+                <p class="join-us-description" data-i18="join-us-description">
                   Fill in the contact form to get further instructions
                 </p>
-                <p class="join-us-text">
+                <p class="join-us-text" data-i18="join-us-text-1">
                   We will send you an invitation link to the RedRover school
                   Slack workspace.
                 </p>
-                <p class="join-us-text">
+                <p class="join-us-text" data-i18="join-us-text-2">
                   For course enrollment, you only need to join our Slack
                   workspace and wait for the semester to start!
                 </p>
@@ -301,8 +299,8 @@
                   <input type="email" placeholder="Email" />
                   <input type="text" placeholder="Name" />
                   <label class="checkbox-label"
-                    >I agree with the
-                    <a href="#">personal data processing policy</a>
+                    ><span data-i18="terms-and-cond">I agree with the</span>
+                    <a href="#" data-i18="terms-and-cond-link">personal data processing policy</a>
                     <input
                       type="checkbox"
                       checked="unchecked"
@@ -310,9 +308,9 @@
                     />
                     <span class="checkmark"></span>
                   </label>
-                  <button class="join-us-form-btn">
-                    <a href="#">Send Request</a>
-                  </button>
+                  <div class="join-us-form-btn">
+                    <a href="#" data-i18="join-us-btn">Send Request</a>
+                  </div>
                 </form>
               </div>
             </div>
@@ -322,28 +320,24 @@
           <div class="content-box">
             <div class="about-us-container">
               <div class="about-us-content">
-                <h2 class="about-us-title">About our school</h2>
-                <p class="about-us-description">
+                <h2 class="about-us-title" data-i18="about-us-title">About our school</h2>
+                <p class="about-us-description" data-i18="about-us-description-1">
                   For more than two years, RedRover. school has given people the
                   opportunity to become software testing professionals. Over a
                   thousand people have comprehensive and systematic knowledge
                   trusted us to take their first steps in a new career.
                 </p>
-                <p class="about-us-description">
+                <p class="about-us-description" data-i18="about-us-description-2">
                   Our school provides comprehensive and systematic knowledge in
                   various testing areas, with an opportunity to take additional
                   courses and to participate in testing projects. Classes are
                   conducted online, in Russian and are scheduled to accommodate
                   the PST time zone.
                 </p>
-                <p class="about-us-description">
-                  Participation in our courses do not require any special
-                  knowledge or preparation. The training is aimed to get the
-                  students into the job market quickly and efficiently. All
-                  educational programs are developed by teachers (active IT
-                  professionals) with a focus on practical application.
+                <p class="about-us-description" data-i18="about-us-description-3">
+                  
                 </p>
-                <p class="about-us-description">
+                <p class="about-us-description" data-i18="about-us-description-4">
                   Join us to begin a new career as an IT professional!
                 </p>
               </div>
@@ -356,7 +350,7 @@
         <section id="teachers" class="teachers">
           <div class="content-box">
             <div class="teachers-wrapper">
-              <h2 class="teachers-title">Teachers</h2>
+              <h2 class="teachers-title" data-i18="teachers-title">Teachers</h2>
               <div class="teachers-container">
                 <div class="teachers-item">
                   <div class="teachers-image-box">
@@ -366,9 +360,9 @@
                   <div class="teachers-description-box">
                     <div class="teachers-hr"></div>
                     <div class="teachers-description">
-                      <h3 class="teachers-name">Sergey Demyanenko</h3>
-                      <p class="teachers-position">Software engineer</p>
-                      <p class="teachers-description-text">
+                      <h3 class="teachers-name" data-i18="sergey">Sergey Demyanenko</h3>
+                      <p class="teachers-position" data-i18="sergey-position">Software engineer</p>
+                      <p class="teachers-description-text" data-i18="sergey-description">
                         I have been a teacher since 2006. I focus on programming
                         in my lessons because every programmer can be a tester,
                         but not every
@@ -387,9 +381,9 @@
                   <div class="teachers-description-box">
                     <div class="teachers-hr"></div>
                     <div class="teachers-description">
-                      <h3 class="teachers-name">Baha Mametyarov</h3>
-                      <p class="teachers-position">Senior Consultant at CGI</p>
-                      <p class="teachers-description-text">
+                      <h3 class="teachers-name" data-i18="baha">Baha Mametyarov</h3>
+                      <p class="teachers-position" data-i18="baha-position">Senior Consultant at CGI</p>
+                      <p class="teachers-description-text" data-i18="baha-description">
                         I have over 18 years of experience in Tech. I’ve been
                         teaching at the RedRover school since March 2022.
                       </p>
@@ -407,9 +401,9 @@
                   <div class="teachers-description-box">
                     <div class="teachers-hr"></div>
                     <div class="teachers-description">
-                      <h3 class="teachers-name">Maria Moroz</h3>
-                      <p class="teachers-position">QA Automation Engineer</p>
-                      <p class="teachers-description-text">
+                      <h3 class="teachers-name" data-i18="maria">Maria Moroz</h3>
+                      <p class="teachers-position" data-i18="maria-position">QA Automation Engineer</p>
+                      <p class="teachers-description-text" data-i18="maria-description">
                         I am a tech lead on Cypress projects and I also serve as
                         an administrative coordinator at the RedRover school.
                       </p>
@@ -417,37 +411,37 @@
                   </div>
                 </div>
               </div>
-              <button class="teachers-btn-see-all">
-                <a href="./teachers/teachers.html">See all</a>
-              </button>
+              <div class="teachers-btn-see-all">
+                <a href="./teachers/teachers.html" data-i18="teachers-btn">See all</a>
+              </div>
             </div>
           </div>
         </section>
         <section class="questions">
           <div class="content-box">
             <div class="questions-container">
-              <h2 class="questions-title">Frequently asked questions</h2>
+              <h2 class="questions-title" data-i18="questions-title">Frequently asked questions</h2>
               <div class="questions-items-box">
                 <div class="questions-item">
-                  <button class="accordion">How long is the course?</button>
+                  <button class="accordion" data-i18="questions-1">How long is the course?</button>
                   <div class="panel">
-                    <p>4 months.</p>
+                    <p data-i18="questions-1-answer">4 months.</p>
                   </div>
                 </div>
                 <div class="questions-item">
-                  <button class="accordion">
+                  <button class="accordion" data-i18="questions-2">
                     What programming languages does the school offer?
                   </button>
                   <div class="panel">
-                    <p>Java, JavaScript, Python.</p>
+                    <p data-i18="questions-2-answer">Java, JavaScript, Python.</p>
                   </div>
                 </div>
                 <div class="questions-item">
-                  <button class="accordion">
+                  <button class="accordion" data-i18="questions-3">
                     Which programming language should I choose?
                   </button>
                   <div class="panel">
-                    <p>
+                    <p data-i18="questions-3-answer">
                       Most people think that the choice of a programming
                       language is important. It is not. The demand for
                       programming languages changes and as you embark on your
@@ -464,22 +458,22 @@
                   </div>
                 </div>
                 <div class="questions-item">
-                  <button class="accordion">
+                  <button class="accordion" data-i18="questions-4">
                     What computer hardware do I need in order to take classes?
                   </button>
                   <div class="panel">
-                    <p>
+                    <p data-i18="questions-4-answer">
                       In order to study in our school, you will need a PC or
                       laptop with internet access.
                     </p>
                   </div>
                 </div>
                 <div class="questions-item">
-                  <button class="accordion">
+                  <button class="accordion" data-i18="questions-5">
                     How do I sign up for courses?
                   </button>
                   <div class="panel">
-                    <p>
+                    <p data-i18="questions-5-answer">
                       You need to join our workspace in Slack through the invite
                       link - we will send it to your email after you fill out
                       the form above. If you have already done so, then you are
@@ -544,7 +538,7 @@
             </div>
           </div>
           <div>
-            <p class="footer-copyright">
+            <p class="footer-copyright" data-i18="footer-copyright">
               Copyright © 2022 RedRover School. All rights reserved
             </p>
           </div>

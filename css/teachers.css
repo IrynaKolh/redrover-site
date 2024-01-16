@@ -94,7 +94,7 @@ h3 img {
   height: 100%;
   position: absolute;
   background: inherit;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   right: 0;
 }
@@ -128,7 +128,7 @@ h3 img {
   gap: 3rem;
   position: relative;
   z-index: 2; 
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .teachers-container {

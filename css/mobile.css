@@ -95,7 +95,7 @@
     position: fixed;
     z-index: 100;
     top: 2.7rem;
-    right: 10rem;
+    right: 7rem;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -290,17 +290,9 @@
   }
 }
 
-@media screen and (max-width: 460px) {
-  .header-content {
-    flex-direction: column;
-    align-items: start;
-  }
-  .hamburger {
-    top: 1.7rem;
-    right: 2rem;
-  }
+@media screen and (max-width: 460px) { 
   h3 img {
-    height: 30px;
+    height: 24px;
   }
 }
 
@@ -308,6 +300,9 @@
   .content-box {
     padding: 10px;
     margin: 0 10px;
+  }
+  .hamburger {
+    right: 5.5rem;
   }
   .btn-group {
     flex-direction: column;
